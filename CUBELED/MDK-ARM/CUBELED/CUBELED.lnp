@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"cubeled\startup_stm32f103xb.o"
+"cubeled\main.o"
+"cubeled\stm32f1xx_it.o"
+"cubeled\stm32f1xx_hal_msp.o"
+"cubeled\stm32f1xx_hal_gpio_ex.o"
+"cubeled\stm32f1xx_hal_tim.o"
+"cubeled\stm32f1xx_hal_tim_ex.o"
+"cubeled\stm32f1xx_hal.o"
+"cubeled\stm32f1xx_hal_rcc.o"
+"cubeled\stm32f1xx_hal_rcc_ex.o"
+"cubeled\stm32f1xx_hal_gpio.o"
+"cubeled\stm32f1xx_hal_dma.o"
+"cubeled\stm32f1xx_hal_cortex.o"
+"cubeled\stm32f1xx_hal_pwr.o"
+"cubeled\stm32f1xx_hal_flash.o"
+"cubeled\stm32f1xx_hal_flash_ex.o"
+"cubeled\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CUBELED\CUBELED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CUBELED.map" -o CUBELED\CUBELED.axf
